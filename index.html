@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+       SEO — à personnaliser avec ton vrai contenu / mots-clés
+       ============================================================ -->
+  <title>Mor SAMB | Data Analyst & Étudiant Économiste - Sénégal</title>
+  <meta name="description" content="Portfolio de Mor SAMB, Data Analyst et étudiant économiste basé au Sénégal. Analyse de données, dashboards Power BI, Python, R, Stata, SQL pour entreprises, PME et ONG en Afrique francophone.">
+  <meta name="keywords" content="data analyst Sénégal, data analyst Afrique, Power BI, Excel, SQL, Python, R, économiste, freelance data">
+  <meta name="author" content="Mor SAMB">
+
+  <!-- Open Graph : améliore l'aperçu quand le lien est partagé (LinkedIn, WhatsApp, etc.) -->
+  <meta property="og:title" content="Mor SAMB | Data Analyst & Étudiant Économiste">
+  <meta property="og:description" content="Analyse de données, dashboards et automatisation pour entreprises, PME et ONG en Afrique francophone.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION — barre fixe avec liens vers chaque section (ancres)
+       ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#hero" class="logo">Mor SAMB</a>
+
+      <!-- Bouton menu mobile (hamburger) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         1. HERO — première impression. Modifie le nom, le titre,
+            la phrase d'accroche et les boutons ici.
+         ============================================================ -->
+    <section id="hero" class="hero">
+      <div class="container hero-content">
+        <p class="hero-eyebrow">Data Analyst • Étudiant Économiste</p>
+        <h1 class="hero-title">Mor SAMB</h1>
+        <p class="hero-subtitle">
+          Je transforme vos données en décisions concrètes : dashboards clairs, prévisions
+          fiables et analyses chiffrées, pour des entreprises, PME et ONG en quête de clarté.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-secondary">Me contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. À PROPOS — remplace le texte et la photo par les tiens.
+            L'image se trouve dans /images/profile.jpg
+         ============================================================ -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-photo">
+          <img src="images/profile.jpg"
+               alt="Photo de profil de Mor SAMB, data analyst"
+               width="320" height="320">
+        </div>
+        <div class="about-text">
+          <p class="section-eyebrow">À propos</p>
+          <h2>Qui suis-je ?</h2>
+          <p>
+            Étudiant économiste et data analyst, je transforme des données brutes en décisions
+            concrètes : dashboards clairs, modèles de prévision et études de marché chiffrées.
+            Je maîtrise l'économétrie (R, Stata) ainsi que les outils de visualisation (Excel,
+            Power BI, Tableau), et j'intègre des outils d'IA comme Claude pour accélérer et
+            fiabiliser mes analyses.
+          </p>
+          <p>
+            Mon approche : livrer des analyses rigoureuses et actionnables, pas de simples
+            graphiques. Je m'adresse aux entreprises, PME et ONG qui veulent des recommandations
+            claires et chiffrées pour orienter leurs décisions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. COMPÉTENCES — organisées par catégories. Ajoute/retire
+            des badges dans chaque .skill-list selon tes outils réels.
+         ============================================================ -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <p class="section-eyebrow">Compétences</p>
+        <h2>Ce que je sais faire</h2>
+
+        <div class="skills-grid">
+
+          <article class="skill-card">
+            <h3>Analyse de données</h3>
+            <ul class="skill-list">
+              <li>Excel (avancé)</li>
+              <li>Power BI</li>
+              <li>Stata</li>
+              <li>SPSS</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Bases de données</h3>
+            <ul class="skill-list">
+              <li>SQL</li>
+              <li>Modélisation de données</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>Programmation</h3>
+            <ul class="skill-list">
+              <li>Python</li>
+              <li>R</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <h3>IA appliquée</h3>
+            <ul class="skill-list">
+              <li>Claude (analyse assistée)</li>
+              <li>Automatisation de tâches</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. PROJETS — une carte par projet. Duplique un .project-card
+            pour en ajouter. Le contenu détaillé du modal est en bas
+            de page (voir .modal) et piloté par script.js
+         ============================================================ -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <p class="section-eyebrow">Projets</p>
+        <h2>Réalisations récentes</h2>
+
+        <div class="projects-grid">
+
+          <!-- Carte projet 1 -->
+          <article class="project-card">
+            <img src="images/project-placeholder.svg" alt="Aperçu de l'analyse RH DataLendo en SQL" width="400" height="240">
+            <div class="project-card-body">
+              <h3>Analyse RH & Turnover — DataLendo</h3>
+              <p>Analyse SQL des effectifs, performances et turnover pour répondre à 15 questions business RH.</p>
+              <button class="btn btn-outline btn-details" data-project="project-1">Voir le détail</button>
+            </div>
+          </article>
+
+          <!-- Carte projet 2 -->
+          <article class="project-card">
+            <img src="images/project-placeholder.svg" alt="Aperçu du dashboard d'analyse e-commerce AfriMarket en Python" width="400" height="240">
+            <div class="project-card-body">
+              <h3>Analyse Stratégique AfriMarket</h3>
+              <p>Étude data d'une plateforme e-commerce panafricaine : 10 100 commandes analysées pour orienter la stratégie produit et marketing.</p>
+              <button class="btn btn-outline btn-details" data-project="project-2">Voir le détail</button>
+            </div>
+          </article>
+
+          <!-- Carte projet 3 -->
+          <article class="project-card">
+            <img src="images/project-placeholder.svg" alt="Aperçu du dashboard santé publique Cameroun en R Shiny" width="400" height="240">
+            <div class="project-card-body">
+              <h3>Dashboard Santé Publique — Cameroun</h3>
+              <p>Dashboard R Shiny interactif sur 10 000 consultations médicales pour suivre l'activité sanitaire par région.</p>
+              <button class="btn btn-outline btn-details" data-project="project-3">Voir le détail</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. CONTACT — coordonnées + formulaire.
+            Le formulaire pointe vers Formspree (à configurer, voir
+            script.js et la note dans le chat).
+         ============================================================ -->
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="section-eyebrow">Contact</p>
+          <h2>Discutons de votre projet</h2>
+          <p>Disponible pour des missions freelance et des postes de data analyst.</p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Email</span>
+              <a href="mailto:sambpolyvalent@gmail.com">sambpolyvalent@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/mor-samb-062136344/" target="_blank" rel="noopener">linkedin.com/in/mor-samb-062136344</a>
+            </li>
+            <li>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/Mor2003-04" target="_blank" rel="noopener">github.com/Mor2003-04</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Formulaire relié à Formspree (compte de Mor SAMB) -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xeeykplq" method="POST">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       MODAL — fiche détaillée d'un projet (problème / méthode /
+       résultat). Rempli dynamiquement par script.js à partir des
+       données définies dans PROJECTS_DATA (voir script.js).
+       ============================================================ -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-overlay" data-close-modal></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="Fermer">&times;</button>
+      <h3 id="modalTitle"></h3>
+      <div class="modal-body">
+        <div class="modal-block">
+          <h4>Problème</h4>
+          <p id="modalProblem"></p>
+        </div>
+        <div class="modal-block">
+          <h4>Méthode</h4>
+          <p id="modalMethod"></p>
+        </div>
+        <div class="modal-block">
+          <h4>Résultat</h4>
+          <p id="modalResult"></p>
+        </div>
+        <a id="modalLink" href="#" target="_blank" rel="noopener" class="btn btn-outline">Voir le code</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Mor SAMB. Tous droits réservés.</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/mor-samb-062136344/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Mor2003-04" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="footer-credit">Site créé avec Claude Code</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

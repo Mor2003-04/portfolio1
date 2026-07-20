@@ -1,0 +1,570 @@
+/* ================================================================
+   VARIABLES DE COULEURS ET DE TYPOGRAPHIE
+   -> C'est ICI que tu changes la palette du site.
+   ================================================================ */
+:root {
+  /* Couleurs principales */
+  --color-bg: #ffffff;
+  --color-bg-alt: #f5f7fa;        /* fond légèrement grisé pour alterner les sections */
+  --color-text: #1a1f2b;
+  --color-text-muted: #5b6472;
+  --color-accent: #1a3c6e;        /* bleu profond = couleur d'accent principale */
+  --color-accent-dark: #10294d;
+  --color-border: #e2e6ec;
+  --color-white: #ffffff;
+
+  /* Typographie */
+  --font-main: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Espacements */
+  --section-padding: 6rem 0;
+  --container-width: 1140px;
+
+  /* Arrondis / ombres */
+  --radius: 8px;
+  --shadow: 0 4px 16px rgba(16, 41, 77, 0.08);
+}
+
+/* ================================================================
+   RESET DE BASE
+   ================================================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* évite que la navbar fixe cache le titre visé par l'ancre */
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ================================================================
+   TITRES & TEXTES GÉNÉRIQUES
+   ================================================================ */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--color-text);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 2.5rem;
+}
+
+.section-eyebrow, .hero-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: 0.75rem;
+}
+
+.section {
+  padding: var(--section-padding);
+}
+
+.section:nth-of-type(even) {
+  background-color: var(--color-bg-alt);
+}
+
+/* ================================================================
+   BOUTONS
+   ================================================================ */
+.btn {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-dark);
+  box-shadow: var(--shadow);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* ================================================================
+   NAVIGATION
+   ================================================================ */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-accent);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  transition: color 0.15s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-accent);
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-toggle span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text);
+}
+
+/* ================================================================
+   HERO
+   ================================================================ */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding-top: 70px; /* compense la navbar fixe */
+  background: linear-gradient(180deg, var(--color-bg-alt) 0%, var(--color-bg) 100%);
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: 1.25rem;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--color-text-muted);
+  margin-bottom: 2.5rem;
+  max-width: 560px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ================================================================
+   À PROPOS
+   ================================================================ */
+.about-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+}
+
+.about-text p {
+  color: var(--color-text-muted);
+  margin-bottom: 1.25rem;
+}
+
+/* ================================================================
+   COMPÉTENCES
+   ================================================================ */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+}
+
+.skill-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--color-accent);
+}
+
+.skill-list li {
+  padding: 0.4rem 0;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.95rem;
+}
+
+.skill-list li:last-child {
+  border-bottom: none;
+}
+
+/* ================================================================
+   PROJETS
+   ================================================================ */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-4px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-color: var(--color-bg-alt);
+}
+
+.project-card-body {
+  padding: 1.5rem;
+}
+
+.project-card-body h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card-body p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ================================================================
+   MODAL DE DÉTAIL PROJET
+   ================================================================ */
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.modal.is-open {
+  display: flex;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(16, 41, 77, 0.55);
+}
+
+.modal-content {
+  position: relative;
+  background-color: var(--color-white);
+  border-radius: var(--radius);
+  max-width: 600px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--color-text-muted);
+}
+
+.modal-content h3 {
+  margin-bottom: 1.5rem;
+  color: var(--color-accent);
+  padding-right: 2rem;
+}
+
+.modal-block {
+  margin-bottom: 1.25rem;
+}
+
+.modal-block h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.4rem;
+}
+
+/* ================================================================
+   CONTACT
+   ================================================================ */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+}
+
+.contact-info p {
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.contact-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contact-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+}
+
+.contact-list a:hover {
+  color: var(--color-accent);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+.contact-form label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.75rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.contact-form button {
+  margin-top: 1.25rem;
+}
+
+.form-note {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: 0.75rem;
+}
+
+/* ================================================================
+   FOOTER
+   ================================================================ */
+.footer {
+  background-color: var(--color-accent-dark);
+  color: var(--color-white);
+  padding: 2.5rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.footer-socials a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.footer-credit {
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: 0.5rem;
+}
+
+/* ================================================================
+   RESPONSIVE — tablette et mobile
+   ================================================================ */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    max-width: 220px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --section-padding: 4rem 0;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+    display: none;
+  }
+
+  .nav-links.is-open {
+    display: flex;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
