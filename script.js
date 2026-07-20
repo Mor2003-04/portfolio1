@@ -6,8 +6,8 @@
 // ================================================================
 const TRANSLATIONS = {
   page_title: {
-    fr: "Mor SAMB | Data Analyst & Étudiant en Licence 3 Économie Appliquée - Sénégal",
-    en: "Mor SAMB | Data Analyst & Applied Economics Student - Senegal"
+    fr: "Mor SAMB | Data Analyst - Power BI & SQL - Sénégal",
+    en: "Mor SAMB | Data Analyst - Power BI & SQL - Senegal"
   },
   nav_toggle_aria: { fr: "Ouvrir le menu", en: "Open menu" },
   nav_about: { fr: "À propos", en: "About" },
@@ -19,7 +19,7 @@ const TRANSLATIONS = {
     fr: "Data Analyst • Étudiant en Licence 3 Économie Appliquée",
     en: "Data Analyst • 3rd-Year Applied Economics Student"
   },
-  hero_title: { fr: "Je suis Mor SAMB", en: "I'm Mor SAMB" },
+  hero_title: { fr: "Bonjour, je suis Mor SAMB", en: "Hi, I'm Mor SAMB" },
   hero_subtitle: {
     fr: "Je transforme vos données en décisions concrètes : dashboards clairs, prévisions fiables et analyses chiffrées, pour des entreprises, PME et ONG en quête de clarté.",
     en: "I turn your data into concrete decisions: clear dashboards, reliable forecasts and data-driven analysis, for businesses, SMEs and NGOs seeking clarity."
@@ -29,7 +29,7 @@ const TRANSLATIONS = {
 
   about_eyebrow: { fr: "À propos", en: "About" },
   about_heading: { fr: "Qui suis-je ?", en: "Who am I?" },
-  about_photo_alt: { fr: "Photo de profil de Mor SAMB, data analyst", en: "Profile photo of Mor SAMB, data analyst" },
+  about_photo_alt: { fr: "Photo de profil de Mor SAMB, data analyst à Dakar", en: "Profile photo of Mor SAMB, data analyst based in Dakar" },
   about_p1: {
     fr: "Étudiant en Licence 3 économie appliquée à l'Université Amadou Makhtar MBOW (UAM) de Diamniadio, à Dakar, je me suis progressivement spécialisé dans l'analyse de données au fil de mes travaux de recherche, jusqu'à en faire aujourd'hui mon activité principale.",
     en: "A 3rd-year Applied Economics student at Université Amadou Makhtar MBOW (UAM) in Diamniadio, Dakar, I gradually specialized in data analysis through my research work, and it has since become my main focus."
