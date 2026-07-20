@@ -7,13 +7,13 @@
   <!-- ============================================================
        SEO — à personnaliser avec ton vrai contenu / mots-clés
        ============================================================ -->
-  <title>Mor SAMB | Data Analyst & Étudiant en Économie Appliquée - Sénégal</title>
-  <meta name="description" content="Portfolio de Mor SAMB, Data Analyst et étudiant en économie appliquée à l'Université Amadou Makhtar MBOW (UAM) de Diamniadio, Dakar (Sénégal). Analyse de données, dashboards Power BI, Python, R, Stata, SQL pour entreprises, PME et ONG en Afrique francophone.">
-  <meta name="keywords" content="data analyst Sénégal, data analyst Afrique, Power BI, Excel, SQL, Python, R, économie appliquée, UAM Diamniadio, freelance data">
+  <title>Mor SAMB | Data Analyst & Étudiant en Licence 3 Économie Appliquée - Sénégal</title>
+  <meta name="description" content="Portfolio de Mor SAMB, Data Analyst et étudiant en licence 3 économie appliquée à l'Université Amadou Makhtar MBOW (UAM) de Diamniadio, Dakar (Sénégal). Analyse de données, dashboards Power BI, Python, R, Stata, SQL pour entreprises, PME et ONG en Afrique francophone.">
+  <meta name="keywords" content="data analyst Sénégal, data analyst Afrique, Power BI, Excel, SQL, Python, R, licence 3 économie appliquée, UAM Diamniadio, freelance data">
   <meta name="author" content="Mor SAMB">
 
   <!-- Open Graph : améliore l'aperçu quand le lien est partagé (LinkedIn, WhatsApp, etc.) -->
-  <meta property="og:title" content="Mor SAMB | Data Analyst & Étudiant en Économie Appliquée">
+  <meta property="og:title" content="Mor SAMB | Data Analyst & Étudiant en Licence 3 Économie Appliquée">
   <meta property="og:description" content="Analyse de données, dashboards et automatisation pour entreprises, PME et ONG en Afrique francophone.">
   <meta property="og:type" content="website">
 
@@ -29,15 +29,21 @@
       <a href="#hero" class="logo">Mor SAMB</a>
 
       <!-- Bouton menu mobile (hamburger) -->
-      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" data-i18n-aria="nav_toggle_aria" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
       <nav class="nav-links" id="navLinks">
-        <a href="#about">À propos</a>
-        <a href="#skills">Compétences</a>
-        <a href="#projects">Projets</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-i18n="nav_about">À propos</a>
+        <a href="#skills" data-i18n="nav_skills">Compétences</a>
+        <a href="#projects" data-i18n="nav_projects">Projets</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+
+        <!-- Sélecteur de langue FR / EN -->
+        <div class="lang-switch" role="group" aria-label="Langue / Language">
+          <button type="button" class="lang-btn is-active" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -50,40 +56,41 @@
          ============================================================ -->
     <section id="hero" class="hero">
       <div class="container hero-content">
-        <p class="hero-eyebrow">Data Analyst • Étudiant en Économie Appliquée</p>
-        <h1 class="hero-title">Mor SAMB</h1>
-        <p class="hero-subtitle">
+        <p class="hero-eyebrow" data-i18n="hero_eyebrow">Data Analyst • Étudiant en Licence 3 Économie Appliquée</p>
+        <h1 class="hero-title" data-i18n="hero_title">Je suis Mor SAMB</h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
           Je transforme vos données en décisions concrètes : dashboards clairs, prévisions
           fiables et analyses chiffrées, pour des entreprises, PME et ONG en quête de clarté.
         </p>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-          <a href="#contact" class="btn btn-secondary">Me contacter</a>
+          <a href="#projects" class="btn btn-primary" data-i18n="hero_btn_projects">Voir mes projets</a>
+          <a href="#contact" class="btn btn-secondary" data-i18n="hero_btn_contact">Me contacter</a>
         </div>
       </div>
     </section>
 
     <!-- ============================================================
          2. À PROPOS — remplace le texte et la photo par les tiens.
-            L'image se trouve dans /images/profile.jpg
+            L'image se trouve dans /images/Photo1.jpeg
          ============================================================ -->
     <section id="about" class="section about">
       <div class="container about-grid">
         <div class="about-photo">
           <img src="images/Photo1.jpeg"
+               data-i18n-alt="about_photo_alt"
                alt="Photo de profil de Mor SAMB, data analyst"
                width="320" height="320">
         </div>
         <div class="about-text">
-          <p class="section-eyebrow">À propos</p>
-          <h2>Qui suis-je ?</h2>
-          <p>
+          <p class="section-eyebrow" data-i18n="about_eyebrow">À propos</p>
+          <h2 data-i18n="about_heading">Qui suis-je ?</h2>
+          <p data-i18n="about_p1">
             Étudiant en Licence 3 économie appliquée à l'Université Amadou Makhtar MBOW (UAM) de
             Diamniadio, à Dakar, je me suis progressivement spécialisé dans l'analyse de données
-            au fil de mes
-            travaux de recherche, jusqu'à en faire aujourd'hui mon activité principale.
+            au fil de mes travaux de recherche, jusqu'à en faire aujourd'hui mon activité
+            principale.
           </p>
-          <p>
+          <p data-i18n="about_p2">
             Je conçois des dashboards sous Excel et Power BI, j'interroge et je structure des
             bases de données en SQL, et je mène des analyses statistiques et économétriques avec
             Python, R, Stata et SPSS. J'utilise aussi l'intelligence artificielle pour accélérer
@@ -91,7 +98,7 @@
             j'aide à répondre à des questions comme : où se situent les pertes de revenus, quels
             clients partent et pourquoi, ou comment prioriser un budget limité.
           </p>
-          <p>
+          <p data-i18n="about_p3">
             Ma formation en économie appliquée m'a appris à replacer chaque chiffre dans
             son contexte : je ne livre pas un graphique, je livre une explication claire de ce
             qu'il implique pour une décision. Cette conviction — que la donnée peut éclairer des
@@ -99,9 +106,10 @@
             travail, notamment auprès des PME et ONG d'Afrique francophone, en particulier au
             Sénégal.
           </p>
-          <p>
-            Je suis actuellement disponible pour des missions freelance comme pour un poste ou un
-            stage en data analyse — n'hésitez pas à me contacter pour en discuter.
+          <p data-i18n="about_p4">
+            Je recherche actuellement un stage dans mon domaine, que je peux mener en parallèle
+            de missions freelance ponctuelles — et je suis disponible immédiatement pour toute
+            opportunité d'emploi. N'hésitez pas à me contacter pour en discuter.
           </p>
         </div>
       </div>
@@ -113,15 +121,15 @@
          ============================================================ -->
     <section id="skills" class="section skills">
       <div class="container">
-        <p class="section-eyebrow">Compétences</p>
-        <h2>Ce que je sais faire</h2>
+        <p class="section-eyebrow" data-i18n="skills_eyebrow">Compétences</p>
+        <h2 data-i18n="skills_heading">Ce que je sais faire</h2>
 
         <div class="skills-grid">
 
           <article class="skill-card">
-            <h3>Analyse de données</h3>
+            <h3 data-i18n="skill_cat_analysis">Analyse de données</h3>
             <ul class="skill-list">
-              <li>Excel (avancé)</li>
+              <li data-i18n="skill_excel">Excel (avancé)</li>
               <li>Power BI</li>
               <li>Stata</li>
               <li>SPSS</li>
@@ -129,15 +137,15 @@
           </article>
 
           <article class="skill-card">
-            <h3>Bases de données</h3>
+            <h3 data-i18n="skill_cat_db">Bases de données</h3>
             <ul class="skill-list">
               <li>SQL</li>
-              <li>Modélisation de données</li>
+              <li data-i18n="skill_datamodel">Modélisation de données</li>
             </ul>
           </article>
 
           <article class="skill-card">
-            <h3>Programmation</h3>
+            <h3 data-i18n="skill_cat_prog">Programmation</h3>
             <ul class="skill-list">
               <li>Python</li>
               <li>R</li>
@@ -145,10 +153,10 @@
           </article>
 
           <article class="skill-card">
-            <h3>IA appliquée</h3>
+            <h3 data-i18n="skill_cat_ai">IA appliquée</h3>
             <ul class="skill-list">
-              <li>Claude (analyse assistée)</li>
-              <li>Automatisation de tâches</li>
+              <li data-i18n="skill_claude">Claude (analyse assistée)</li>
+              <li data-i18n="skill_automation">Automatisation de tâches</li>
             </ul>
           </article>
 
@@ -163,38 +171,38 @@
          ============================================================ -->
     <section id="projects" class="section projects">
       <div class="container">
-        <p class="section-eyebrow">Projets</p>
-        <h2>Réalisations récentes</h2>
+        <p class="section-eyebrow" data-i18n="projects_eyebrow">Projets</p>
+        <h2 data-i18n="projects_heading">Réalisations récentes</h2>
 
         <div class="projects-grid">
 
           <!-- Carte projet 1 -->
           <article class="project-card">
-            <img src="images/project-placeholder.svg" alt="Aperçu de l'analyse RH DataLendo en SQL" width="400" height="240">
+            <img src="images/project-placeholder.svg" data-i18n-alt="proj1_img_alt" alt="Aperçu de l'analyse RH DataLendo en SQL" width="400" height="240">
             <div class="project-card-body">
-              <h3>Analyse RH & Turnover — DataLendo</h3>
-              <p>Analyse SQL des effectifs, performances et turnover pour répondre à 15 questions business RH.</p>
-              <button class="btn btn-outline btn-details" data-project="project-1">Voir le détail</button>
+              <h3 data-i18n="proj1_title">Analyse RH & Turnover — DataLendo</h3>
+              <p data-i18n="proj1_summary">Analyse SQL des effectifs, performances et turnover pour répondre à 15 questions business RH.</p>
+              <button class="btn btn-outline btn-details" data-project="project-1" data-i18n="btn_details">Voir le détail</button>
             </div>
           </article>
 
           <!-- Carte projet 2 -->
           <article class="project-card">
-            <img src="images/project-placeholder.svg" alt="Aperçu du dashboard d'analyse e-commerce AfriMarket en Python" width="400" height="240">
+            <img src="images/project-placeholder.svg" data-i18n-alt="proj2_img_alt" alt="Aperçu du dashboard d'analyse e-commerce AfriMarket en Python" width="400" height="240">
             <div class="project-card-body">
-              <h3>Analyse Stratégique AfriMarket</h3>
-              <p>Étude data d'une plateforme e-commerce panafricaine : 10 100 commandes analysées pour orienter la stratégie produit et marketing.</p>
-              <button class="btn btn-outline btn-details" data-project="project-2">Voir le détail</button>
+              <h3 data-i18n="proj2_title">Analyse Stratégique AfriMarket</h3>
+              <p data-i18n="proj2_summary">Étude data d'une plateforme e-commerce panafricaine : 10 100 commandes analysées pour orienter la stratégie produit et marketing.</p>
+              <button class="btn btn-outline btn-details" data-project="project-2" data-i18n="btn_details">Voir le détail</button>
             </div>
           </article>
 
           <!-- Carte projet 3 -->
           <article class="project-card">
-            <img src="images/project-placeholder.svg" alt="Aperçu du dashboard santé publique Cameroun en R Shiny" width="400" height="240">
+            <img src="images/project-placeholder.svg" data-i18n-alt="proj3_img_alt" alt="Aperçu du dashboard santé publique Cameroun en R Shiny" width="400" height="240">
             <div class="project-card-body">
-              <h3>Dashboard Santé Publique — Cameroun</h3>
-              <p>Dashboard R Shiny interactif sur 10 000 consultations médicales pour suivre l'activité sanitaire par région.</p>
-              <button class="btn btn-outline btn-details" data-project="project-3">Voir le détail</button>
+              <h3 data-i18n="proj3_title">Dashboard Santé Publique — Cameroun</h3>
+              <p data-i18n="proj3_summary">Dashboard R Shiny interactif sur 10 000 consultations médicales pour suivre l'activité sanitaire par région.</p>
+              <button class="btn btn-outline btn-details" data-project="project-3" data-i18n="btn_details">Voir le détail</button>
             </div>
           </article>
 
@@ -210,20 +218,20 @@
     <section id="contact" class="section contact">
       <div class="container contact-grid">
         <div class="contact-info">
-          <p class="section-eyebrow">Contact</p>
-          <h2>Discutons de votre projet</h2>
-          <p>Disponible pour des missions freelance et des postes de data analyst.</p>
+          <p class="section-eyebrow" data-i18n="contact_eyebrow">Contact</p>
+          <h2 data-i18n="contact_heading">Discutons de votre projet</h2>
+          <p data-i18n="contact_intro">Actuellement à la recherche d'un stage dans mon domaine, en parallèle de missions freelance — et disponible immédiatement pour toute opportunité d'emploi.</p>
           <ul class="contact-list">
             <li>
-              <span class="contact-label">Email</span>
+              <span class="contact-label" data-i18n="contact_email_label">Email</span>
               <a href="mailto:sambpolyvalent@gmail.com">sambpolyvalent@gmail.com</a>
             </li>
             <li>
-              <span class="contact-label">LinkedIn</span>
+              <span class="contact-label" data-i18n="contact_linkedin_label">LinkedIn</span>
               <a href="https://www.linkedin.com/in/mor-samb-062136344/" target="_blank" rel="noopener">linkedin.com/in/mor-samb-062136344</a>
             </li>
             <li>
-              <span class="contact-label">GitHub</span>
+              <span class="contact-label" data-i18n="contact_github_label">GitHub</span>
               <a href="https://github.com/Mor2003-04" target="_blank" rel="noopener">github.com/Mor2003-04</a>
             </li>
           </ul>
@@ -231,16 +239,16 @@
 
         <!-- Formulaire relié à Formspree (compte de Mor SAMB) -->
         <form class="contact-form" id="contactForm" action="https://formspree.io/f/xeeykplq" method="POST">
-          <label for="name">Nom</label>
+          <label for="name" data-i18n="form_name_label">Nom</label>
           <input type="text" id="name" name="name" required>
 
-          <label for="email">Email</label>
+          <label for="email" data-i18n="form_email_label">Email</label>
           <input type="email" id="email" name="email" required>
 
-          <label for="message">Message</label>
+          <label for="message" data-i18n="form_message_label">Message</label>
           <textarea id="message" name="message" rows="5" required></textarea>
 
-          <button type="submit" class="btn btn-primary">Envoyer</button>
+          <button type="submit" class="btn btn-primary" data-i18n="form_submit">Envoyer</button>
           <p class="form-note" id="formNote"></p>
         </form>
       </div>
@@ -256,22 +264,22 @@
   <div class="modal" id="projectModal" aria-hidden="true">
     <div class="modal-overlay" data-close-modal></div>
     <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" data-close-modal aria-label="Fermer">&times;</button>
+      <button class="modal-close" data-close-modal data-i18n-aria="modal_close_aria" aria-label="Fermer">&times;</button>
       <h3 id="modalTitle"></h3>
       <div class="modal-body">
         <div class="modal-block">
-          <h4>Problème</h4>
+          <h4 data-i18n="modal_problem">Problème</h4>
           <p id="modalProblem"></p>
         </div>
         <div class="modal-block">
-          <h4>Méthode</h4>
+          <h4 data-i18n="modal_method">Méthode</h4>
           <p id="modalMethod"></p>
         </div>
         <div class="modal-block">
-          <h4>Résultat</h4>
+          <h4 data-i18n="modal_result">Résultat</h4>
           <p id="modalResult"></p>
         </div>
-        <a id="modalLink" href="#" target="_blank" rel="noopener" class="btn btn-outline">Voir le code</a>
+        <a id="modalLink" href="#" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="modal_view_code">Voir le code</a>
       </div>
     </div>
   </div>
@@ -281,12 +289,12 @@
        ============================================================ -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> Mor SAMB. Tous droits réservés.</p>
+      <p>&copy; <span id="year"></span> Mor SAMB. <span data-i18n="footer_rights">Tous droits réservés.</span></p>
       <div class="footer-socials">
         <a href="https://www.linkedin.com/in/mor-samb-062136344/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/Mor2003-04" target="_blank" rel="noopener">GitHub</a>
       </div>
-      <p class="footer-credit">Site créé avec Claude Code</p>
+      <p class="footer-credit" data-i18n="footer_credit">Site créé avec Claude Code</p>
     </div>
   </footer>
 

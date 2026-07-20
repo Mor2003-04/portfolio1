@@ -5,12 +5,12 @@
 :root {
   /* Couleurs principales */
   --color-bg: #ffffff;
-  --color-bg-alt: #f8f9fb;        /* fond légèrement grisé pour alterner les sections */
-  --color-text: #101828;
-  --color-text-muted: #475467;
-  --color-accent: #163a5f;        /* bleu marine profond = couleur d'accent principale */
-  --color-accent-dark: #0c2540;
-  --color-border: #e3e6ec;
+  --color-bg-alt: #f6f7fb;        /* fond légèrement grisé pour alterner les sections */
+  --color-text: #0d1321;
+  --color-text-muted: #555f7a;
+  --color-accent: #2f5fda;        /* bleu indigo vif = couleur d'accent principale */
+  --color-accent-dark: #1f3fa8;
+  --color-border: #e1e4ea;
   --color-white: #ffffff;
 
   /* Typographie */
@@ -22,7 +22,7 @@
 
   /* Arrondis / ombres */
   --radius: 8px;
-  --shadow: 0 4px 20px rgba(16, 24, 40, 0.07);
+  --shadow: 0 6px 24px rgba(13, 19, 33, 0.09);
 }
 
 /* ================================================================
@@ -158,9 +158,10 @@ h2 {
   left: 0;
   right: 0;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 1px 3px rgba(13, 19, 33, 0.04);
 }
 
 .navbar-inner {
@@ -200,6 +201,34 @@ h2 {
   border: none;
   cursor: pointer;
   padding: 0.5rem;
+}
+
+/* Sélecteur de langue FR / EN */
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 2px;
+  gap: 2px;
+  margin-left: 0.5rem;
+}
+
+.lang-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  color: var(--color-text-muted);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.lang-btn.is-active {
+  background-color: var(--color-accent);
+  color: var(--color-white);
 }
 
 .nav-toggle span {
@@ -317,6 +346,7 @@ h2 {
 .project-card:hover {
   box-shadow: var(--shadow);
   transform: translateY(-4px);
+  border-color: var(--color-accent);
 }
 
 .project-card img {
@@ -556,6 +586,12 @@ h2 {
 
   .nav-links.is-open {
     display: flex;
+  }
+
+  .nav-links .lang-switch {
+    align-self: flex-start;
+    margin-left: 0;
+    margin-top: 0.25rem;
   }
 
   .hero-actions {
