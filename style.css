@@ -5,12 +5,12 @@
 :root {
   /* Couleurs principales */
   --color-bg: #ffffff;
-  --color-bg-alt: #f5f7fa;        /* fond légèrement grisé pour alterner les sections */
-  --color-text: #1a1f2b;
-  --color-text-muted: #5b6472;
-  --color-accent: #1a3c6e;        /* bleu profond = couleur d'accent principale */
-  --color-accent-dark: #10294d;
-  --color-border: #e2e6ec;
+  --color-bg-alt: #f8f9fb;        /* fond légèrement grisé pour alterner les sections */
+  --color-text: #101828;
+  --color-text-muted: #475467;
+  --color-accent: #163a5f;        /* bleu marine profond = couleur d'accent principale */
+  --color-accent-dark: #0c2540;
+  --color-border: #e3e6ec;
   --color-white: #ffffff;
 
   /* Typographie */
@@ -22,7 +22,7 @@
 
   /* Arrondis / ombres */
   --radius: 8px;
-  --shadow: 0 4px 16px rgba(16, 41, 77, 0.08);
+  --shadow: 0 4px 20px rgba(16, 24, 40, 0.07);
 }
 
 /* ================================================================
