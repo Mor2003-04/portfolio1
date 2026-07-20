@@ -23,7 +23,7 @@ const PROJECTS_DATA = {
     title: "Dashboard Santé Publique — Cameroun",
     problem: "Les décideurs sanitaires avaient besoin d'une vue consolidée et filtrable de l'activité des centres de santé (consultations, coûts, ruptures de stock) à travers les 10 régions du Cameroun pour identifier les zones à risque.",
     method: "Développement d'un dashboard interactif en R (Shiny) à partir d'une base de 10 000 consultations patients, avec filtres dynamiques par région, période et type de consultation (urgence, suivi, externe, prénatal, vaccination). Visualisations : consultations par région, évolution mensuelle, top pathologies et taux de rupture de stock par région.",
-    result: "Dashboard exploitant 10 000 enregistrements réels, mettant en évidence un taux de rupture de stock moyen de 18% (avec des pics proches de 20% dans certaines régions comme le Nord-Ouest), un taux de couverture d'assurance de seulement 33,4%, et un coût total de traitements de 173 278 $ sur la période — des indicateurs directement actionnables pour prioriser les réapprovisionnements.",
+    result: "Cas d'étude construit sur 10 000 enregistrements simulés mais réalistes, mettant en évidence un taux de rupture de stock moyen de 18% (avec des pics proches de 20% dans certaines régions comme le Nord-Ouest), un taux de couverture d'assurance de seulement 33,4%, et un coût total de traitements de 173 278 $ sur la période — des indicateurs directement actionnables pour prioriser les réapprovisionnements.",
     url: "https://019f7f6a-58ef-85b5-9ca7-e65db6e22fbb.share.connect.posit.cloud/"
   }
 };
