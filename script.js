@@ -109,7 +109,6 @@ const TRANSLATIONS = {
     en: "Continuous upskilling, validated by recognized organizations — every certificate can be viewed and downloaded."
   },
   cert_view: { fr: "Voir", en: "View" },
-  cert_download: { fr: "Télécharger", en: "Download" },
 
   cert1_title: { fr: "Claude pour l'Analyse des Données", en: "Claude for Data Analysis" },
   cert1_date: { fr: "Kinshasa · Juin 2026", en: "Kinshasa · June 2026" },
@@ -148,7 +147,6 @@ const TRANSLATIONS = {
   contact_phone_label: { fr: "Téléphone", en: "Phone" },
   contact_email_label: { fr: "Email", en: "Email" },
   contact_linkedin_label: { fr: "LinkedIn", en: "LinkedIn" },
-  contact_github_label: { fr: "GitHub", en: "GitHub" },
 
   form_name_label: { fr: "Nom", en: "Name" },
   form_email_label: { fr: "Email", en: "Email" },
