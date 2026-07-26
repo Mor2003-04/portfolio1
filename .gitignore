@@ -2,3 +2,5 @@
 .DS_Store
 Thumbs.db
 *.log
+cv/_cv-render.html
+cv/profile-cv-base64.txt

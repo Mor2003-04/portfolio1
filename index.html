@@ -5,30 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- ============================================================
-       SEO — à personnaliser avec ton vrai contenu / mots-clés
+       SEO
        ============================================================ -->
   <title>Mor SAMB | Data Analyst - Power BI & SQL - Sénégal</title>
-  <meta name="description" content="Data analyst à Dakar, je transforme vos données en dashboards et analyses chiffrées avec Power BI, SQL, Python et R. Disponible pour stage et freelance.">
-  <meta name="keywords" content="data analyst Sénégal, data analyst Afrique, Power BI, Excel, SQL, Python, R, licence 3 économie appliquée, UAM Diamniadio, freelance data">
+  <meta name="description" content="Data analyst à Dakar, je transforme vos données en dashboards et analyses chiffrées avec Power BI, SQL, Python et R. Certifié, CV téléchargeable. Disponible pour stage et freelance.">
+  <meta name="keywords" content="data analyst Sénégal, data analyst Afrique, Power BI, Excel, SQL, Python, R, licence 3 économie appliquée, UAM Diamniadio, freelance data, CV data analyst">
   <meta name="author" content="Mor SAMB">
 
-  <!-- Open Graph : améliore l'aperçu quand le lien est partagé (LinkedIn, WhatsApp, etc.) -->
   <meta property="og:title" content="Mor SAMB | Data Analyst - Power BI & SQL - Sénégal">
   <meta property="og:description" content="Data analyst à Dakar, je transforme vos données en dashboards et analyses chiffrées avec Power BI, SQL, Python et R.">
   <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- ============================================================
-       NAVIGATION — barre fixe avec liens vers chaque section (ancres)
+       NAVIGATION
        ============================================================ -->
   <header class="navbar" id="navbar">
     <div class="container navbar-inner">
       <a href="#accueil" class="logo">Mor SAMB</a>
 
-      <!-- Bouton menu mobile (hamburger) -->
       <button class="nav-toggle" id="navToggle" data-i18n-aria="nav_toggle_aria" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -37,9 +39,10 @@
         <a href="#a-propos" data-i18n="nav_about">À propos</a>
         <a href="#competences" data-i18n="nav_skills">Compétences</a>
         <a href="#projets" data-i18n="nav_projects">Projets</a>
+        <a href="#certifications" data-i18n="nav_certs">Certifications</a>
         <a href="#contact" data-i18n="nav_contact">Contact</a>
+        <a href="cv/Mor-SAMB-CV.pdf" class="btn btn-accent btn-sm" download data-i18n="nav_cv">Télécharger mon CV</a>
 
-        <!-- Sélecteur de langue FR / EN -->
         <div class="lang-switch" role="group" aria-label="Langue / Language">
           <button type="button" class="lang-btn is-active" data-lang="fr" aria-pressed="true">FR</button>
           <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
@@ -51,35 +54,66 @@
   <main>
 
     <!-- ============================================================
-         1. HERO — première impression. Modifie le nom, le titre,
-            la phrase d'accroche et les boutons ici.
+         1. HERO
          ============================================================ -->
     <section id="accueil" class="hero">
-      <div class="container hero-content">
-        <p class="hero-eyebrow" data-i18n="hero_eyebrow">Data Analyst • Étudiant en Licence 3 Économie Appliquée</p>
-        <h1 class="hero-title" data-i18n="hero_title">Bonjour, je suis Mor SAMB</h1>
-        <p class="hero-subtitle" data-i18n="hero_subtitle">
-          Je transforme vos données en décisions concrètes : dashboards clairs, prévisions
-          fiables et analyses chiffrées, pour des entreprises, PME et ONG en quête de clarté.
-        </p>
-        <div class="hero-actions">
-          <a href="#projets" class="btn btn-primary" data-i18n="hero_btn_projects">Voir mes projets</a>
-          <a href="#contact" class="btn btn-secondary" data-i18n="hero_btn_contact">Me contacter</a>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-eyebrow" data-i18n="hero_eyebrow">Data Analyst • Étudiant en Licence 3 Économie Appliquée</p>
+          <h1 class="hero-title" data-i18n="hero_title">Bonjour, je suis <span class="accent">Mor SAMB</span></h1>
+          <p class="hero-subtitle" data-i18n="hero_subtitle">
+            Je transforme vos données en décisions concrètes : dashboards clairs, prévisions
+            fiables et analyses chiffrées, pour des entreprises, PME et ONG en quête de clarté.
+          </p>
+          <div class="hero-actions">
+            <a href="#projets" class="btn btn-primary" data-i18n="hero_btn_projects">Voir mes projets</a>
+            <a href="cv/Mor-SAMB-CV.pdf" class="btn btn-accent" download data-i18n="hero_btn_cv">Télécharger mon CV</a>
+            <a href="#contact" class="btn btn-secondary" data-i18n="hero_btn_contact">Me contacter</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <b>6</b>
+              <span data-i18n="hero_stat_certs">Certifications obtenues</span>
+            </div>
+            <div class="hero-stat">
+              <b>3</b>
+              <span data-i18n="hero_stat_projects">Projets data livrés</span>
+            </div>
+            <div class="hero-stat">
+              <b>4</b>
+              <span data-i18n="hero_stat_tools">Outils d'analyse maîtrisés</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-frame">
+            <img src="images/profile-cv.jpg" data-i18n-alt="hero_photo_alt" alt="Photo professionnelle de Mor SAMB, data analyst à Dakar" width="340" height="386">
+          </div>
+          <div class="hero-badge">
+            <span class="dot"></span>
+            <div>
+              <strong data-i18n="hero_badge_title">Disponible immédiatement</strong>
+              <span data-i18n="hero_badge_sub">Stage &amp; freelance</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================================
-         2. À PROPOS — remplace le texte et la photo par les tiens.
-            L'image se trouve dans /images/Photo1.jpeg
+         2. À PROPOS
          ============================================================ -->
     <section id="a-propos" class="section about">
       <div class="container about-grid">
         <div class="about-photo">
-          <img src="images/Photo1.jpeg"
+          <img src="images/profile-cv.jpg"
                data-i18n-alt="about_photo_alt"
                alt="Photo de profil de Mor SAMB, data analyst à Dakar"
-               width="320" height="320">
+               width="320" height="400">
+          <div class="about-photo-caption">
+            <b>Mor SAMB</b>
+            <span data-i18n="about_photo_caption">Data Analyst — Dakar, Sénégal</span>
+          </div>
         </div>
         <div class="about-text">
           <p class="section-eyebrow" data-i18n="about_eyebrow">À propos</p>
@@ -111,22 +145,27 @@
             de missions freelance ponctuelles — et je suis disponible immédiatement pour toute
             opportunité d'emploi. N'hésitez pas à me contacter pour en discuter.
           </p>
+          <div class="about-cta">
+            <a href="cv/Mor-SAMB-CV.pdf" class="btn btn-accent" download data-i18n="about_btn_cv">Télécharger mon CV complet</a>
+            <a href="#certifications" class="btn btn-outline" data-i18n="about_btn_certs">Voir mes certifications</a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================================
-         3. COMPÉTENCES — organisées par catégories. Ajoute/retire
-            des badges dans chaque .skill-list selon tes outils réels.
+         3. COMPÉTENCES
          ============================================================ -->
     <section id="competences" class="section skills">
       <div class="container">
         <p class="section-eyebrow" data-i18n="skills_eyebrow">Compétences</p>
         <h2 data-i18n="skills_heading">Ce que je sais faire</h2>
+        <p class="section-lead" data-i18n="skills_lead">Un socle technique complet, de la préparation de la donnée à sa mise en récit, renforcé par des certifications récentes.</p>
 
         <div class="skills-grid">
 
           <article class="skill-card">
+            <div class="skill-card-icon">01</div>
             <h3 data-i18n="skill_cat_analysis">Analyse de données</h3>
             <ul class="skill-list">
               <li data-i18n="skill_excel">Excel (avancé)</li>
@@ -137,6 +176,7 @@
           </article>
 
           <article class="skill-card">
+            <div class="skill-card-icon">02</div>
             <h3 data-i18n="skill_cat_db">Bases de données</h3>
             <ul class="skill-list">
               <li>SQL</li>
@@ -145,6 +185,7 @@
           </article>
 
           <article class="skill-card">
+            <div class="skill-card-icon">03</div>
             <h3 data-i18n="skill_cat_prog">Programmation</h3>
             <ul class="skill-list">
               <li>Python</li>
@@ -153,6 +194,7 @@
           </article>
 
           <article class="skill-card">
+            <div class="skill-card-icon">04</div>
             <h3 data-i18n="skill_cat_ai">IA appliquée</h3>
             <ul class="skill-list">
               <li data-i18n="skill_claude">Claude (analyse assistée)</li>
@@ -165,41 +207,40 @@
     </section>
 
     <!-- ============================================================
-         4. PROJETS — une carte par projet. Duplique un .project-card
-            pour en ajouter. Le contenu détaillé du modal est en bas
-            de page (voir .modal) et piloté par script.js
+         4. PROJETS
          ============================================================ -->
     <section id="projets" class="section projects">
       <div class="container">
         <p class="section-eyebrow" data-i18n="projects_eyebrow">Projets</p>
         <h2 data-i18n="projects_heading">Réalisations récentes</h2>
+        <p class="section-lead" data-i18n="projects_lead">Trois études de cas complètes, du problème métier jusqu'aux résultats chiffrés.</p>
 
         <div class="projects-grid">
 
-          <!-- Carte projet 1 -->
           <article class="project-card">
-            <img src="images/project-placeholder.svg" data-i18n-alt="proj1_img_alt" alt="Aperçu de l'analyse RH DataLendo en SQL" width="400" height="240">
+            <div class="project-card-top"></div>
             <div class="project-card-body">
+              <span class="project-tag">SQL</span>
               <h3 data-i18n="proj1_title">Analyse RH & Turnover — DataLendo</h3>
               <p data-i18n="proj1_summary">Analyse SQL des effectifs, performances et turnover pour répondre à 15 questions business RH.</p>
               <button class="btn btn-outline btn-details" data-project="project-1" data-i18n="btn_details">Voir le détail</button>
             </div>
           </article>
 
-          <!-- Carte projet 2 -->
           <article class="project-card">
-            <img src="images/project-placeholder.svg" data-i18n-alt="proj2_img_alt" alt="Aperçu du dashboard d'analyse e-commerce AfriMarket en Python" width="400" height="240">
+            <div class="project-card-top"></div>
             <div class="project-card-body">
+              <span class="project-tag">Python</span>
               <h3 data-i18n="proj2_title">Analyse Stratégique AfriMarket</h3>
               <p data-i18n="proj2_summary">Étude data d'une plateforme e-commerce panafricaine : 10 100 commandes analysées pour orienter la stratégie produit et marketing.</p>
               <button class="btn btn-outline btn-details" data-project="project-2" data-i18n="btn_details">Voir le détail</button>
             </div>
           </article>
 
-          <!-- Carte projet 3 -->
           <article class="project-card">
-            <img src="images/project-placeholder.svg" data-i18n-alt="proj3_img_alt" alt="Aperçu du dashboard santé publique Cameroun en R Shiny" width="400" height="240">
+            <div class="project-card-top"></div>
             <div class="project-card-body">
+              <span class="project-tag">R Shiny</span>
               <h3 data-i18n="proj3_title">Dashboard Santé Publique — Cameroun</h3>
               <p data-i18n="proj3_summary">Dashboard R Shiny interactif sur 10 000 consultations médicales pour suivre l'activité sanitaire par région.</p>
               <button class="btn btn-outline btn-details" data-project="project-3" data-i18n="btn_details">Voir le détail</button>
@@ -211,9 +252,160 @@
     </section>
 
     <!-- ============================================================
-         5. CONTACT — coordonnées + formulaire.
-            Le formulaire pointe vers Formspree (à configurer, voir
-            script.js et la note dans le chat).
+         5. CERTIFICATIONS
+         ============================================================ -->
+    <section id="certifications" class="section certifications">
+      <div class="container">
+        <p class="section-eyebrow" data-i18n="certs_eyebrow">Certifications</p>
+        <h2 data-i18n="certs_heading">Formations & certifications</h2>
+        <p class="section-lead" data-i18n="certs_lead">Une montée en compétence continue, validée par des organismes reconnus — chaque certificat est consultable et téléchargeable.</p>
+
+        <div class="certs-grid">
+
+          <article class="cert-card">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z"/></svg>
+            </div>
+            <div class="cert-body">
+              <h3 data-i18n="cert1_title">Claude pour l'Analyse des Données</h3>
+              <p class="cert-issuer">Eurêka Services</p>
+              <p class="cert-date" data-i18n="cert1_date">Kinshasa · Juin 2026</p>
+              <div class="cert-actions">
+                <a class="btn btn-outline btn-sm" href="certificates/claude-data-analyst.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Voir</a>
+                <a class="btn btn-outline btn-sm" href="certificates/claude-data-analyst.pdf" download data-i18n="cert_download">Télécharger</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z"/></svg>
+            </div>
+            <div class="cert-body">
+              <h3 data-i18n="cert2_title">Analyse de Données — R, SPSS & Stata</h3>
+              <p class="cert-issuer">Eurêka Services</p>
+              <p class="cert-date" data-i18n="cert2_date">Kinshasa · Juin 2026</p>
+              <div class="cert-actions">
+                <a class="btn btn-outline btn-sm" href="certificates/analyse-donnees-r-spss-stata.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Voir</a>
+                <a class="btn btn-outline btn-sm" href="certificates/analyse-donnees-r-spss-stata.pdf" download data-i18n="cert_download">Télécharger</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z"/></svg>
+            </div>
+            <div class="cert-body">
+              <h3 data-i18n="cert3_title">Intelligence Artificielle pour tous</h3>
+              <p class="cert-issuer">FORCE-N · Univ. Numérique Cheikh Hamidou Kane · Mastercard Foundation</p>
+              <p class="cert-date" data-i18n="cert3_date">Juillet 2026</p>
+              <div class="cert-actions">
+                <a class="btn btn-outline btn-sm" href="certificates/ia-pour-tous-force-n.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Voir</a>
+                <a class="btn btn-outline btn-sm" href="certificates/ia-pour-tous-force-n.pdf" download data-i18n="cert_download">Télécharger</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z"/></svg>
+            </div>
+            <div class="cert-body">
+              <h3 data-i18n="cert4_title">Ready, Set, Career</h3>
+              <p class="cert-issuer">Power UP · Ambassade des États-Unis au Sénégal</p>
+              <p class="cert-date" data-i18n="cert4_date">Dakar · Juin 2026</p>
+              <div class="cert-actions">
+                <a class="btn btn-outline btn-sm" href="certificates/power-up-ready-set-career.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Voir</a>
+                <a class="btn btn-outline btn-sm" href="certificates/power-up-ready-set-career.pdf" download data-i18n="cert_download">Télécharger</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z"/></svg>
+            </div>
+            <div class="cert-body">
+              <h3 data-i18n="cert5_title">Intelligence Artificielle sur mobile</h3>
+              <p class="cert-issuer">Kunta Multi-Services</p>
+              <p class="cert-date" data-i18n="cert5_date">Ouagadougou · Juin 2026</p>
+              <div class="cert-actions">
+                <a class="btn btn-outline btn-sm" href="certificates/ia-mobile-kms.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Voir</a>
+                <a class="btn btn-outline btn-sm" href="certificates/ia-mobile-kms.pdf" download data-i18n="cert_download">Télécharger</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 14.4 7.2 16.9l.9-5.4L4.2 7.7l5.4-.8L12 2z"/></svg>
+            </div>
+            <div class="cert-body">
+              <h3 data-i18n="cert6_title">Débuter en Programmation</h3>
+              <p class="cert-issuer">Cursa</p>
+              <p class="cert-date" data-i18n="cert6_date">Mai 2026</p>
+              <div class="cert-actions">
+                <a class="btn btn-outline btn-sm" href="certificates/programmation-cursa.pdf" target="_blank" rel="noopener" data-i18n="cert_view">Voir</a>
+                <a class="btn btn-outline btn-sm" href="certificates/programmation-cursa.pdf" download data-i18n="cert_download">Télécharger</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. CV / RÉSUMÉ
+         ============================================================ -->
+    <section id="cv" class="section cv-section">
+      <div class="container">
+        <div class="cv-panel">
+          <div class="cv-panel-text">
+            <p class="section-eyebrow" data-i18n="cv_eyebrow">Curriculum Vitae</p>
+            <h2 data-i18n="cv_heading">Un CV complet, prêt pour vos offres</h2>
+            <p data-i18n="cv_text">Profil, expériences data, formation, compétences et l'ensemble de mes certifications réunis sur une page, avec photo professionnelle — au format PDF, prêt à être partagé avec vos équipes RH.</p>
+            <div class="cv-panel-actions">
+              <a href="cv/Mor-SAMB-CV.pdf" class="btn btn-accent" download data-i18n="cv_btn_download">Télécharger le CV (PDF)</a>
+              <a href="cv/Mor-SAMB-CV.pdf" class="btn btn-secondary" target="_blank" rel="noopener" style="color:#fff;border-color:rgba(255,255,255,0.4);" data-i18n="cv_btn_view">Aperçu en ligne</a>
+            </div>
+          </div>
+          <div class="cv-highlights">
+            <div class="cv-highlight">
+              <span class="icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+              </span>
+              <div>
+                <b data-i18n="cv_hl1_title">6 certifications</b>
+                <span data-i18n="cv_hl1_sub">Data, IA & professionnel</span>
+              </div>
+            </div>
+            <div class="cv-highlight">
+              <span class="icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>
+              </span>
+              <div>
+                <b data-i18n="cv_hl2_title">3 projets détaillés</b>
+                <span data-i18n="cv_hl2_sub">Résultats chiffrés à l'appui</span>
+              </div>
+            </div>
+            <div class="cv-highlight">
+              <span class="icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.2 4 2.2C11 6.2 12.5 5 14.5 5 18 5 20.5 8.5 18.5 12.5 16 16.65 9 21 12 21z" fill="none"/><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.2 4 2.2C11 6.2 12.5 5 14.5 5 18 5 20.5 8.5 18.5 12.5 16 16.65 9 21 12 21z"/></svg>
+              </span>
+              <div>
+                <b data-i18n="cv_hl3_title">Disponible immédiatement</b>
+                <span data-i18n="cv_hl3_sub">Stage &amp; freelance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. CONTACT
          ============================================================ -->
     <section id="contact" class="section contact">
       <div class="container contact-grid">
@@ -222,6 +414,10 @@
           <h2 data-i18n="contact_heading">Discutons de votre projet</h2>
           <p data-i18n="contact_intro">Actuellement à la recherche d'un stage dans mon domaine, en parallèle de missions freelance — et disponible immédiatement pour toute opportunité d'emploi.</p>
           <ul class="contact-list">
+            <li>
+              <span class="contact-label" data-i18n="contact_phone_label">Téléphone</span>
+              <a href="tel:+221765168407">+221 76 516 84 07</a>
+            </li>
             <li>
               <span class="contact-label" data-i18n="contact_email_label">Email</span>
               <a href="mailto:sambpolyvalent@gmail.com">sambpolyvalent@gmail.com</a>
@@ -237,7 +433,6 @@
           </ul>
         </div>
 
-        <!-- Formulaire relié à Formspree (compte de Mor SAMB) -->
         <form class="contact-form" id="contactForm" action="https://formspree.io/f/xeeykplq" method="POST">
           <label for="name" data-i18n="form_name_label">Nom</label>
           <input type="text" id="name" name="name" required>
@@ -257,9 +452,7 @@
   </main>
 
   <!-- ============================================================
-       MODAL — fiche détaillée d'un projet (problème / méthode /
-       résultat). Rempli dynamiquement par script.js à partir des
-       données définies dans PROJECTS_DATA (voir script.js).
+       MODAL — fiche détaillée d'un projet
        ============================================================ -->
   <div class="modal" id="projectModal" aria-hidden="true">
     <div class="modal-overlay" data-close-modal></div>
@@ -293,6 +486,7 @@
       <div class="footer-socials">
         <a href="https://www.linkedin.com/in/mor-samb-062136344/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/Mor2003-04" target="_blank" rel="noopener">GitHub</a>
+        <a href="cv/Mor-SAMB-CV.pdf" download data-i18n="footer_cv">CV</a>
       </div>
       <p class="footer-credit" data-i18n="footer_credit">Site créé avec Claude Code</p>
     </div>

@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="240" viewBox="0 0 400 240">
-  <rect width="400" height="240" fill="#eef1f6"/>
-  <rect x="30" y="150" width="30" height="60" fill="#1a3c6e"/>
-  <rect x="75" y="110" width="30" height="100" fill="#3a5f96"/>
-  <rect x="120" y="70" width="30" height="140" fill="#1a3c6e"/>
-  <rect x="165" y="130" width="30" height="80" fill="#3a5f96"/>
-  <text x="200" y="40" font-family="Arial, sans-serif" font-size="14" fill="#5b6472" text-anchor="middle">Visuel de dashboard à remplacer</text>
-</svg>

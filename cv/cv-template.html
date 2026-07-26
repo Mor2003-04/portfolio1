@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Mor SAMB — CV</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 210mm;
+    height: 297mm;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #1b2230;
+    background: #ffffff;
+  }
+  .page {
+    display: grid;
+    grid-template-columns: 68mm 1fr;
+    width: 210mm;
+    min-height: 297mm;
+  }
+
+  /* ---------- SIDEBAR ---------- */
+  .sidebar {
+    background: #10192b;
+    color: #eef1f6;
+    padding: 9mm 7mm;
+  }
+  .photo-wrap {
+    width: 34mm;
+    height: 34mm;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 5mm;
+    border: 2px solid #c68a2c;
+  }
+  .photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .sidebar h1 {
+    font-size: 14pt;
+    text-align: center;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .sidebar .role {
+    text-align: center;
+    font-size: 8pt;
+    color: #c68a2c;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin-top: 1.5mm;
+    margin-bottom: 7mm;
+    line-height: 1.4;
+  }
+  .side-block { margin-bottom: 6.5mm; }
+  .side-title {
+    font-size: 8.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #c68a2c;
+    margin-bottom: 2.5mm;
+    padding-bottom: 1.5mm;
+    border-bottom: 1px solid rgba(198,138,44,0.4);
+  }
+  .contact-item {
+    font-size: 8pt;
+    line-height: 1.6;
+    color: #d7dce4;
+    word-break: break-word;
+    margin-bottom: 1.5mm;
+  }
+  .contact-item b { color: #ffffff; display: block; font-size: 7pt; text-transform: uppercase; letter-spacing: 0.05em; color: #8b93a3; }
+  .skill-group { margin-bottom: 3mm; }
+  .skill-group .cat { font-size: 8pt; font-weight: 700; color: #ffffff; margin-bottom: 1mm; }
+  .tag-row { display: flex; flex-wrap: wrap; gap: 1.3mm; }
+  .tag {
+    font-size: 7pt;
+    background: rgba(198,138,44,0.15);
+    border: 1px solid rgba(198,138,44,0.5);
+    color: #f0d9b0;
+    padding: 0.8mm 2mm;
+    border-radius: 3mm;
+  }
+  .lang-row { display: flex; justify-content: space-between; font-size: 8pt; margin-bottom: 1.5mm; color: #d7dce4; }
+  .lang-row span.level { color: #8b93a3; font-size: 7pt; }
+
+  /* ---------- MAIN ---------- */
+  .main { padding: 9mm 10mm; }
+  .main-section { margin-bottom: 6mm; }
+  .main-title {
+    font-size: 10.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #10192b;
+    margin-bottom: 3mm;
+    padding-bottom: 1.5mm;
+    border-bottom: 1.5px solid #c68a2c;
+  }
+  .profile-text {
+    font-size: 8.7pt;
+    line-height: 1.55;
+    color: #3a4152;
+    text-align: justify;
+  }
+  .entry { margin-bottom: 4.5mm; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 3mm;
+  }
+  .entry-title { font-size: 9pt; font-weight: 700; color: #1b2230; }
+  .entry-org { font-size: 8pt; color: #c68a2c; font-weight: 600; }
+  .entry-date { font-size: 7.5pt; color: #8a8f9c; white-space: nowrap; font-weight: 600; }
+  .entry-desc { font-size: 8pt; line-height: 1.5; color: #4a5162; margin-top: 1mm; }
+  .entry-desc b { color: #1b2230; }
+
+  .cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm 6mm; }
+  .cert-item { font-size: 7.8pt; line-height: 1.4; padding-left: 3mm; border-left: 2px solid #c68a2c; }
+  .cert-item .c-title { font-weight: 700; color: #1b2230; display: block; }
+  .cert-item .c-meta { color: #7a8091; font-size: 7pt; }
+
+  .edu-item { margin-bottom: 2mm; }
+
+  .avail-box {
+    margin-top: 7mm;
+    display: flex;
+    align-items: center;
+    gap: 3mm;
+    background: #faf5ea;
+    border: 1px solid #e8d3a5;
+    border-radius: 2mm;
+    padding: 4mm 5mm;
+    font-size: 8pt;
+    color: #4a5162;
+    line-height: 1.45;
+  }
+  .avail-box b { color: #10192b; }
+  .avail-dot {
+    flex: 0 0 auto;
+    width: 3mm;
+    height: 3mm;
+    border-radius: 50%;
+    background: #3fae63;
+    box-shadow: 0 0 0 3mm rgba(63,174,99,0.15);
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      <div class="photo-wrap"><img src="data:image/jpeg;base64,{{PHOTO_BASE64}}" alt="Mor Samb"></div>
+      <h1>MOR SAMB</h1>
+      <p class="role">DATA ANALYST<br>Power BI · SQL · Python · R</p>
+
+      <div class="side-block">
+        <div class="side-title">Contact</div>
+        <div class="contact-item"><b>Téléphone</b>+221 76 516 84 07</div>
+        <div class="contact-item"><b>Email</b>sambpolyvalent@gmail.com</div>
+        <div class="contact-item"><b>Localisation</b>Dakar, Sénégal</div>
+        <div class="contact-item"><b>LinkedIn</b>linkedin.com/in/mor-samb-062136344</div>
+        <div class="contact-item"><b>GitHub</b>github.com/Mor2003-04</div>
+      </div>
+
+      <div class="side-block">
+        <div class="side-title">Compétences</div>
+        <div class="skill-group">
+          <div class="cat">Analyse de données</div>
+          <div class="tag-row">
+            <span class="tag">Excel avancé</span><span class="tag">Power BI</span><span class="tag">Stata</span><span class="tag">SPSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="cat">Bases de données</div>
+          <div class="tag-row"><span class="tag">SQL</span><span class="tag">Modélisation</span></div>
+        </div>
+        <div class="skill-group">
+          <div class="cat">Programmation</div>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">R</span></div>
+        </div>
+        <div class="skill-group">
+          <div class="cat">IA appliquée</div>
+          <div class="tag-row"><span class="tag">Claude AI</span><span class="tag">Claude Code</span><span class="tag">Automatisation</span></div>
+        </div>
+      </div>
+
+      <div class="side-block">
+        <div class="side-title">Langues</div>
+        <div class="lang-row"><span>Français</span><span class="level">Langue maternelle</span></div>
+        <div class="lang-row"><span>Anglais</span><span class="level">Professionnel</span></div>
+      </div>
+
+      <div class="side-block">
+        <div class="side-title">Centres d'intérêt</div>
+        <div class="contact-item" style="margin:0;">Data storytelling · Veille IA appliquée à la donnée · Économie du développement</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section class="main-section">
+        <div class="main-title">Profil</div>
+        <p class="profile-text">
+          Étudiant en Licence 3 Économie Appliquée à l'Université Amadou Makhtar Mbow (UAM) de Diamniadio,
+          spécialisé en analyse de données appliquée à la décision. Je conçois des dashboards Excel et Power BI,
+          j'interroge et structure des bases de données en SQL, et je mène des analyses statistiques et
+          économétriques avec Python, R, Stata et SPSS — en m'appuyant sur l'IA (Claude) pour accélérer
+          l'exploration de données volumineuses et fiabiliser les résultats. Je recherche actuellement un stage
+          en data analyse, disponible immédiatement, et j'accompagne en parallèle des PME/ONG d'Afrique
+          francophone en freelance.
+        </p>
+      </section>
+
+      <section class="main-section">
+        <div class="main-title">Projets &amp; réalisations</div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <span class="entry-title">Analyse Stratégique AfriMarket</span>
+            <span class="entry-date">2026</span>
+          </div>
+          <div class="entry-org">Étude data — plateforme e-commerce panafricaine</div>
+          <p class="entry-desc">
+            Audit et nettoyage de 10 100 commandes (Python/pandas), feature engineering (CA, marge, valeur vie
+            client) et dashboard Streamlit. <b>CA analysé ~2,50 M€, profit net ~507 K€</b>, taux de retour 8,1 %,
+            récurrence clients 74 %, ROI email marketing ~224× supérieur aux influenceurs.
+          </p>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <span class="entry-title">Analyse RH &amp; Turnover — DataLendo</span>
+            <span class="entry-date">2026</span>
+          </div>
+          <div class="entry-org">Analyse SQL — effectifs, performance, turnover</div>
+          <p class="entry-desc">
+            Modélisation d'une base SQL (4 tables, 19 500+ lignes) et rédaction de <b>15 requêtes commentées</b>
+            pour répondre aux questions business RH : taux de turnover par département, cohortes d'embauche,
+            tendances de performance 2022-2024.
+          </p>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <span class="entry-title">Dashboard Santé Publique — Cameroun</span>
+            <span class="entry-date">2026</span>
+          </div>
+          <div class="entry-org">Dashboard interactif R Shiny — 10 régions</div>
+          <p class="entry-desc">
+            Dashboard sur <b>10 000 consultations</b> avec filtres dynamiques (région, période, type de
+            consultation) : taux de rupture de stock moyen 18 %, couverture d'assurance 33,4 %, coûts de
+            traitement 173 278 $ sur la période.
+          </p>
+        </div>
+      </section>
+
+      <section class="main-section">
+        <div class="main-title">Formation</div>
+        <div class="entry edu-item">
+          <div class="entry-head">
+            <span class="entry-title">Licence 3 — Économie Appliquée</span>
+            <span class="entry-date">En cours</span>
+          </div>
+          <div class="entry-org">Université Amadou Makhtar Mbow (UAM), Diamniadio — Dakar, Sénégal</div>
+        </div>
+      </section>
+
+      <section class="main-section">
+        <div class="main-title">Certifications &amp; formations</div>
+        <div class="cert-grid">
+          <div class="cert-item">
+            <span class="c-title">Claude pour l'Analyse des Données</span>
+            <span class="c-meta">Eurêka Services — juin 2026</span>
+          </div>
+          <div class="cert-item">
+            <span class="c-title">Analyse de Données (R, SPSS, Stata)</span>
+            <span class="c-meta">Eurêka Services — juin 2026</span>
+          </div>
+          <div class="cert-item">
+            <span class="c-title">Intelligence Artificielle pour tous</span>
+            <span class="c-meta">FORCE-N · Univ. Numérique Cheikh Hamidou Kane · Mastercard Foundation — juil. 2026</span>
+          </div>
+          <div class="cert-item">
+            <span class="c-title">Ready, Set, Career</span>
+            <span class="c-meta">Power UP · Ambassade des États-Unis au Sénégal — juin 2026</span>
+          </div>
+          <div class="cert-item">
+            <span class="c-title">Intelligence artificielle sur mobile</span>
+            <span class="c-meta">Kunta Multi-Services — juin 2026</span>
+          </div>
+          <div class="cert-item">
+            <span class="c-title">Débuter en Programmation</span>
+            <span class="c-meta">Cursa — mai 2026</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="avail-box">
+        <span class="avail-dot"></span>
+        <div>
+          <b>Disponible immédiatement</b> pour un stage en data analyse, en parallèle de missions freelance ponctuelles.
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

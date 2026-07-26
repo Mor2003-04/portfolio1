@@ -13,7 +13,9 @@ const TRANSLATIONS = {
   nav_about: { fr: "À propos", en: "About" },
   nav_skills: { fr: "Compétences", en: "Skills" },
   nav_projects: { fr: "Projets", en: "Projects" },
+  nav_certs: { fr: "Certifications", en: "Certifications" },
   nav_contact: { fr: "Contact", en: "Contact" },
+  nav_cv: { fr: "Télécharger mon CV", en: "Download my resume" },
 
   hero_eyebrow: {
     fr: "Data Analyst • Étudiant en Licence 3 Économie Appliquée",
@@ -26,10 +28,20 @@ const TRANSLATIONS = {
   },
   hero_btn_projects: { fr: "Voir mes projets", en: "View my projects" },
   hero_btn_contact: { fr: "Me contacter", en: "Contact me" },
+  hero_btn_cv: { fr: "Télécharger mon CV", en: "Download my resume" },
+  hero_stat_certs: { fr: "Certifications obtenues", en: "Certifications earned" },
+  hero_stat_projects: { fr: "Projets data livrés", en: "Data projects delivered" },
+  hero_stat_tools: { fr: "Outils d'analyse maîtrisés", en: "Analytics tools mastered" },
+  hero_photo_alt: { fr: "Photo professionnelle de Mor SAMB, data analyst à Dakar", en: "Professional photo of Mor SAMB, data analyst based in Dakar" },
+  hero_badge_title: { fr: "Disponible immédiatement", en: "Available immediately" },
+  hero_badge_sub: { fr: "Stage & freelance", en: "Internship & freelance" },
 
   about_eyebrow: { fr: "À propos", en: "About" },
   about_heading: { fr: "Qui suis-je ?", en: "Who am I?" },
   about_photo_alt: { fr: "Photo de profil de Mor SAMB, data analyst à Dakar", en: "Profile photo of Mor SAMB, data analyst based in Dakar" },
+  about_photo_caption: { fr: "Data Analyst — Dakar, Sénégal", en: "Data Analyst — Dakar, Senegal" },
+  about_btn_cv: { fr: "Télécharger mon CV complet", en: "Download my full resume" },
+  about_btn_certs: { fr: "Voir mes certifications", en: "View my certifications" },
   about_p1: {
     fr: "Étudiant en Licence 3 économie appliquée à l'Université Amadou Makhtar MBOW (UAM) de Diamniadio, à Dakar, je me suis progressivement spécialisé dans l'analyse de données au fil de mes travaux de recherche, jusqu'à en faire aujourd'hui mon activité principale.",
     en: "A 3rd-year Applied Economics student at Université Amadou Makhtar MBOW (UAM) in Diamniadio, Dakar, I gradually specialized in data analysis through my research work, and it has since become my main focus."
@@ -49,6 +61,10 @@ const TRANSLATIONS = {
 
   skills_eyebrow: { fr: "Compétences", en: "Skills" },
   skills_heading: { fr: "Ce que je sais faire", en: "What I can do" },
+  skills_lead: {
+    fr: "Un socle technique complet, de la préparation de la donnée à sa mise en récit, renforcé par des certifications récentes.",
+    en: "A complete technical foundation, from data preparation to storytelling, backed by recent certifications."
+  },
   skill_cat_analysis: { fr: "Analyse de données", en: "Data Analysis" },
   skill_cat_db: { fr: "Bases de données", en: "Databases" },
   skill_cat_prog: { fr: "Programmation", en: "Programming" },
@@ -60,6 +76,10 @@ const TRANSLATIONS = {
 
   projects_eyebrow: { fr: "Projets", en: "Projects" },
   projects_heading: { fr: "Réalisations récentes", en: "Recent work" },
+  projects_lead: {
+    fr: "Trois études de cas complètes, du problème métier jusqu'aux résultats chiffrés.",
+    en: "Three complete case studies, from the business problem to the measurable results."
+  },
   btn_details: { fr: "Voir le détail", en: "View details" },
 
   proj1_title: { fr: "Analyse RH & Turnover — DataLendo", en: "HR & Turnover Analysis — DataLendo" },
@@ -83,12 +103,50 @@ const TRANSLATIONS = {
   },
   proj3_img_alt: { fr: "Aperçu du dashboard santé publique Cameroun en R Shiny", en: "Preview of the Cameroon public health dashboard in R Shiny" },
 
+  certs_eyebrow: { fr: "Certifications", en: "Certifications" },
+  certs_heading: { fr: "Formations & certifications", en: "Training & certifications" },
+  certs_lead: {
+    fr: "Une montée en compétence continue, validée par des organismes reconnus — chaque certificat est consultable et téléchargeable.",
+    en: "Continuous upskilling, validated by recognized organizations — every certificate can be viewed and downloaded."
+  },
+  cert_view: { fr: "Voir", en: "View" },
+  cert_download: { fr: "Télécharger", en: "Download" },
+
+  cert1_title: { fr: "Claude pour l'Analyse des Données", en: "Claude for Data Analysis" },
+  cert1_date: { fr: "Kinshasa · Juin 2026", en: "Kinshasa · June 2026" },
+  cert2_title: { fr: "Analyse de Données — R, SPSS & Stata", en: "Data Analysis — R, SPSS & Stata" },
+  cert2_date: { fr: "Kinshasa · Juin 2026", en: "Kinshasa · June 2026" },
+  cert3_title: { fr: "Intelligence Artificielle pour tous", en: "Artificial Intelligence for All" },
+  cert3_date: { fr: "Juillet 2026", en: "July 2026" },
+  cert4_title: { fr: "Ready, Set, Career", en: "Ready, Set, Career" },
+  cert4_date: { fr: "Dakar · Juin 2026", en: "Dakar · June 2026" },
+  cert5_title: { fr: "Intelligence Artificielle sur mobile", en: "Artificial Intelligence on Mobile" },
+  cert5_date: { fr: "Ouagadougou · Juin 2026", en: "Ouagadougou · June 2026" },
+  cert6_title: { fr: "Débuter en Programmation", en: "Getting Started with Programming" },
+  cert6_date: { fr: "Mai 2026", en: "May 2026" },
+
+  cv_eyebrow: { fr: "Curriculum Vitae", en: "Curriculum Vitae" },
+  cv_heading: { fr: "Un CV complet, prêt pour vos offres", en: "A complete resume, ready for your job offers" },
+  cv_text: {
+    fr: "Profil, expériences data, formation, compétences et l'ensemble de mes certifications réunis sur une page, avec photo professionnelle — au format PDF, prêt à être partagé avec vos équipes RH.",
+    en: "Profile, data experience, education, skills and all my certifications on a single page, with a professional photo — in PDF format, ready to share with your HR team."
+  },
+  cv_btn_download: { fr: "Télécharger le CV (PDF)", en: "Download resume (PDF)" },
+  cv_btn_view: { fr: "Aperçu en ligne", en: "Preview online" },
+  cv_hl1_title: { fr: "6 certifications", en: "6 certifications" },
+  cv_hl1_sub: { fr: "Data, IA & professionnel", en: "Data, AI & professional" },
+  cv_hl2_title: { fr: "3 projets détaillés", en: "3 detailed projects" },
+  cv_hl2_sub: { fr: "Résultats chiffrés à l'appui", en: "Backed by measurable results" },
+  cv_hl3_title: { fr: "Disponible immédiatement", en: "Available immediately" },
+  cv_hl3_sub: { fr: "Stage & freelance", en: "Internship & freelance" },
+
   contact_eyebrow: { fr: "Contact", en: "Contact" },
   contact_heading: { fr: "Discutons de votre projet", en: "Let's talk about your project" },
   contact_intro: {
     fr: "Actuellement à la recherche d'un stage dans mon domaine, en parallèle de missions freelance — et disponible immédiatement pour toute opportunité d'emploi.",
     en: "Currently looking for an internship in my field alongside freelance work — and available immediately for any job opportunity."
   },
+  contact_phone_label: { fr: "Téléphone", en: "Phone" },
   contact_email_label: { fr: "Email", en: "Email" },
   contact_linkedin_label: { fr: "LinkedIn", en: "LinkedIn" },
   contact_github_label: { fr: "GitHub", en: "GitHub" },
@@ -111,6 +169,7 @@ const TRANSLATIONS = {
   modal_close_aria: { fr: "Fermer", en: "Close" },
 
   footer_rights: { fr: "Tous droits réservés.", en: "All rights reserved." },
+  footer_cv: { fr: "CV", en: "Resume" },
   footer_credit: { fr: "Site créé avec Claude Code", en: "Site built with Claude Code" }
 };
 
@@ -216,6 +275,16 @@ document.querySelectorAll(".lang-btn").forEach((btn) => {
 // ANNÉE COURANTE DANS LE FOOTER
 // ================================================================
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// ================================================================
+// OMBRE DE LA NAVBAR AU DÉFILEMENT
+// ================================================================
+const navbarEl = document.getElementById("navbar");
+const updateNavbarShadow = () => {
+  navbarEl.classList.toggle("is-scrolled", window.scrollY > 8);
+};
+window.addEventListener("scroll", updateNavbarShadow, { passive: true });
+updateNavbarShadow();
 
 // ================================================================
 // MENU MOBILE (hamburger)
