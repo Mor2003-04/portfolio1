@@ -34,7 +34,7 @@ const TRANSLATIONS = {
   hero_stat_tools: { fr: "Outils d'analyse maîtrisés", en: "Analytics tools mastered" },
   hero_photo_alt: { fr: "Photo professionnelle de Mor SAMB, data analyst à Dakar", en: "Professional photo of Mor SAMB, data analyst based in Dakar" },
   hero_badge_title: { fr: "Disponible immédiatement", en: "Available immediately" },
-  hero_badge_sub: { fr: "Stage & freelance", en: "Internship & freelance" },
+  hero_badge_sub: { fr: "Stage, offre d'emploi ou freelance", en: "Internship, job opportunity or freelance" },
 
   about_eyebrow: { fr: "À propos", en: "About" },
   about_heading: { fr: "Qui suis-je ?", en: "Who am I?" },
@@ -138,7 +138,7 @@ const TRANSLATIONS = {
   cv_hl2_title: { fr: "3 projets détaillés", en: "3 detailed projects" },
   cv_hl2_sub: { fr: "Résultats chiffrés à l'appui", en: "Backed by measurable results" },
   cv_hl3_title: { fr: "Disponible immédiatement", en: "Available immediately" },
-  cv_hl3_sub: { fr: "Stage & freelance", en: "Internship & freelance" },
+  cv_hl3_sub: { fr: "Stage, offre d'emploi ou freelance", en: "Internship, job opportunity or freelance" },
 
   contact_eyebrow: { fr: "Contact", en: "Contact" },
   contact_heading: { fr: "Discutons de votre projet", en: "Let's talk about your project" },
