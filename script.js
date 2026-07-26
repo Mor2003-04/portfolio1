@@ -168,8 +168,8 @@ const TRANSLATIONS = {
   modal_close_aria: { fr: "Fermer", en: "Close" },
 
   quote_text: {
-    fr: "Je viens d'un pays où le talent ne manque pas — ce sont les portes qui manquent. Chaque donnée que j'analyse, chaque dashboard que je construis, est ma façon de prouver que la rigueur et la curiosité n'ont pas de frontières. Je ne demande pas qu'on croie en moi : je demande une chance de le montrer.",
-    en: "I come from a place where talent isn't scarce — opportunity is. Every dataset I analyze, every dashboard I build, is my way of proving that rigor and curiosity know no borders. I'm not asking anyone to believe in me: I'm asking for the chance to show it."
+    fr: "Je n'analyse pas des chiffres, je révèle des décisions qui changent des vies.",
+    en: "I don't just analyze numbers — I uncover decisions that change lives."
   },
 
   footer_rights: { fr: "Tous droits réservés.", en: "All rights reserved." },
