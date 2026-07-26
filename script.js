@@ -34,7 +34,6 @@ const TRANSLATIONS = {
   hero_stat_tools: { fr: "Outils d'analyse maîtrisés", en: "Analytics tools mastered" },
   hero_photo_alt: { fr: "Photo professionnelle de Mor SAMB, data analyst à Dakar", en: "Professional photo of Mor SAMB, data analyst based in Dakar" },
   hero_badge_title: { fr: "Disponible immédiatement", en: "Available immediately" },
-  hero_badge_sub: { fr: "Stage, offre d'emploi ou freelance", en: "Internship, job opportunity or freelance" },
 
   about_eyebrow: { fr: "À propos", en: "About" },
   about_heading: { fr: "Qui suis-je ?", en: "Who am I?" },
@@ -167,6 +166,11 @@ const TRANSLATIONS = {
   modal_result: { fr: "Résultat", en: "Result" },
   modal_view_code: { fr: "Voir le code", en: "View code" },
   modal_close_aria: { fr: "Fermer", en: "Close" },
+
+  quote_text: {
+    fr: "Je viens d'un pays où le talent ne manque pas — ce sont les portes qui manquent. Chaque donnée que j'analyse, chaque dashboard que je construis, est ma façon de prouver que la rigueur et la curiosité n'ont pas de frontières. Je ne demande pas qu'on croie en moi : je demande une chance de le montrer.",
+    en: "I come from a place where talent isn't scarce — opportunity is. Every dataset I analyze, every dashboard I build, is my way of proving that rigor and curiosity know no borders. I'm not asking anyone to believe in me: I'm asking for the chance to show it."
+  },
 
   footer_rights: { fr: "Tous droits réservés.", en: "All rights reserved." },
   footer_cv: { fr: "CV", en: "Resume" },
