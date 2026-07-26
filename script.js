@@ -168,8 +168,8 @@ const TRANSLATIONS = {
   modal_close_aria: { fr: "Fermer", en: "Close" },
 
   quote_text: {
-    fr: "Je n'analyse pas des chiffres, je révèle des décisions qui changent des vies.",
-    en: "I don't just analyze numbers — I uncover decisions that change lives."
+    fr: "Chaque donnée que j'analyse, chaque dashboard que je construis, est ma façon de prouver que la rigueur et la curiosité n'ont pas de frontières.",
+    en: "Every dataset I analyze, every dashboard I build, is my way of proving that rigor and curiosity know no borders."
   },
 
   footer_rights: { fr: "Tous droits réservés.", en: "All rights reserved." },
