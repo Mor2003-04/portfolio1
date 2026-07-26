@@ -32,13 +32,13 @@ const TRANSLATIONS = {
   hero_stat_certs: { fr: "Certifications obtenues", en: "Certifications earned" },
   hero_stat_projects: { fr: "Projets data livrés", en: "Data projects delivered" },
   hero_stat_tools: { fr: "Outils d'analyse maîtrisés", en: "Analytics tools mastered" },
-  hero_photo_alt: { fr: "Photo professionnelle de Mor SAMB, data analyst à Dakar", en: "Professional photo of Mor SAMB, data analyst based in Dakar" },
+  hero_photo_alt: { fr: "Photo de Mor SAMB, data analyst à Thiès", en: "Photo of Mor SAMB, data analyst based in Thiès" },
   hero_badge_title: { fr: "Disponible immédiatement", en: "Available immediately" },
 
   about_eyebrow: { fr: "À propos", en: "About" },
   about_heading: { fr: "Qui suis-je ?", en: "Who am I?" },
-  about_photo_alt: { fr: "Photo de profil de Mor SAMB, data analyst à Dakar", en: "Profile photo of Mor SAMB, data analyst based in Dakar" },
-  about_photo_caption: { fr: "Data Analyst — Dakar, Sénégal", en: "Data Analyst — Dakar, Senegal" },
+  about_photo_alt: { fr: "Photo de profil de Mor SAMB, data analyst à Thiès", en: "Profile photo of Mor SAMB, data analyst based in Thiès" },
+  about_photo_caption: { fr: "Data Analyst — Thiès, Sénégal", en: "Data Analyst — Thiès, Senegal" },
   about_btn_cv: { fr: "Télécharger mon CV complet", en: "Download my full resume" },
   about_btn_certs: { fr: "Voir mes certifications", en: "View my certifications" },
   about_p1: {
