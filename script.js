@@ -72,6 +72,8 @@ const TRANSLATIONS = {
   skill_datamodel: { fr: "Modélisation de données", en: "Data modeling" },
   skill_claude: { fr: "Claude (analyse assistée)", en: "Claude (AI-assisted analysis)" },
   skill_automation: { fr: "Automatisation de tâches", en: "Task automation" },
+  skill_cat_collection: { fr: "Collecte de données", en: "Data Collection" },
+  skill_odk: { fr: "ODK (Open Data Kit)", en: "ODK (Open Data Kit)" },
 
   projects_eyebrow: { fr: "Projets", en: "Projects" },
   projects_heading: { fr: "Réalisations récentes", en: "Recent work" },
