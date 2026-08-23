@@ -6,8 +6,8 @@
 // ================================================================
 const TRANSLATIONS = {
   page_title: {
-    fr: "Mor SAMB | Data Analyst - Power BI & SQL - Sénégal",
-    en: "Mor SAMB | Data Analyst - Power BI & SQL - Senegal"
+    fr: "Mor SAMB | Data Analyst Junior - Power BI & SQL - Sénégal",
+    en: "Mor SAMB | Junior Data Analyst - Power BI & SQL - Senegal"
   },
   nav_toggle_aria: { fr: "Ouvrir le menu", en: "Open menu" },
   nav_about: { fr: "À propos", en: "About" },
@@ -18,8 +18,8 @@ const TRANSLATIONS = {
   nav_cv: { fr: "Télécharger mon CV", en: "Download my resume" },
 
   hero_eyebrow: {
-    fr: "Data Analyst • Étudiant en Licence 3 Économie Appliquée",
-    en: "Data Analyst • 3rd-Year Applied Economics Student"
+    fr: "Data Analyst Junior • Étudiant en Licence 3 Économie Appliquée",
+    en: "Junior Data Analyst • 3rd-Year Applied Economics Student"
   },
   hero_title: { fr: "Bonjour, je suis Mor SAMB", en: "Hi, I'm Mor SAMB" },
   hero_subtitle: {
@@ -32,13 +32,12 @@ const TRANSLATIONS = {
   hero_stat_certs: { fr: "Certifications obtenues", en: "Certifications earned" },
   hero_stat_projects: { fr: "Projets data livrés", en: "Data projects delivered" },
   hero_stat_tools: { fr: "Outils d'analyse maîtrisés", en: "Analytics tools mastered" },
-  hero_photo_alt: { fr: "Photo de Mor SAMB, data analyst à Thiès", en: "Photo of Mor SAMB, data analyst based in Thiès" },
-  hero_badge_title: { fr: "Disponible immédiatement", en: "Available immediately" },
+  hero_photo_alt: { fr: "Photo de Mor SAMB, data analyst junior à Thiès", en: "Photo of Mor SAMB, junior data analyst based in Thiès" },
 
   about_eyebrow: { fr: "À propos", en: "About" },
   about_heading: { fr: "Qui suis-je ?", en: "Who am I?" },
-  about_photo_alt: { fr: "Photo de profil de Mor SAMB, data analyst à Thiès", en: "Profile photo of Mor SAMB, data analyst based in Thiès" },
-  about_photo_caption: { fr: "Data Analyst — Thiès, Sénégal", en: "Data Analyst — Thiès, Senegal" },
+  about_photo_alt: { fr: "Photo de profil de Mor SAMB, data analyst junior à Thiès", en: "Profile photo of Mor SAMB, junior data analyst based in Thiès" },
+  about_photo_caption: { fr: "Data Analyst Junior — Thiès, Sénégal", en: "Junior Data Analyst — Thiès, Senegal" },
   about_btn_cv: { fr: "Télécharger mon CV complet", en: "Download my full resume" },
   about_btn_certs: { fr: "Voir mes certifications", en: "View my certifications" },
   about_p1: {
