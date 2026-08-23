@@ -54,8 +54,8 @@ const TRANSLATIONS = {
     en: "My background in applied economics taught me to put every number back into context: I don't just deliver a chart, I deliver a clear explanation of what it means for a decision. This belief — that data can inform concrete choices for organizations that don't always have a dedicated data team — guides my work, particularly with SMEs and NGOs across French-speaking Africa, and Senegal in particular."
   },
   about_p4: {
-    fr: "Je recherche actuellement un stage dans mon domaine, que je peux mener en parallèle de missions freelance ponctuelles — et je suis disponible immédiatement pour toute opportunité d'emploi. N'hésitez pas à me contacter pour en discuter.",
-    en: "I'm currently looking for an internship in my field, which I can combine with occasional freelance work — and I'm available immediately for any job opportunity. Feel free to reach out to discuss."
+    fr: "Aujourd'hui Data Analyst Junior, je suis prêt pour l'emploi et les offres freelance, et disponible immédiatement. N'hésitez pas à me contacter pour en discuter.",
+    en: "Now a Junior Data Analyst, I'm ready for employment and freelance opportunities, and available immediately. Feel free to reach out to discuss."
   },
 
   skills_eyebrow: { fr: "Compétences", en: "Skills" },
@@ -138,13 +138,13 @@ const TRANSLATIONS = {
   cv_hl2_title: { fr: "3 projets détaillés", en: "3 detailed projects" },
   cv_hl2_sub: { fr: "Résultats chiffrés à l'appui", en: "Backed by measurable results" },
   cv_hl3_title: { fr: "Disponible immédiatement", en: "Available immediately" },
-  cv_hl3_sub: { fr: "Stage, offre d'emploi ou freelance", en: "Internship, job opportunity or freelance" },
+  cv_hl3_sub: { fr: "Prêt pour l'emploi & le freelance", en: "Ready for employment & freelance" },
 
   contact_eyebrow: { fr: "Contact", en: "Contact" },
   contact_heading: { fr: "Discutons de votre projet", en: "Let's talk about your project" },
   contact_intro: {
-    fr: "Actuellement à la recherche d'un stage dans mon domaine, en parallèle de missions freelance — et disponible immédiatement pour toute opportunité d'emploi.",
-    en: "Currently looking for an internship in my field alongside freelance work — and available immediately for any job opportunity."
+    fr: "Data Analyst Junior, prêt pour l'emploi et les offres freelance — disponible immédiatement.",
+    en: "Junior Data Analyst, ready for employment and freelance opportunities — available immediately."
   },
   contact_phone_label: { fr: "Téléphone", en: "Phone" },
   contact_email_label: { fr: "Email", en: "Email" },
