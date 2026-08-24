@@ -40,6 +40,38 @@ const TRANSLATIONS = {
   about_photo_caption: { fr: "Data Analyst Junior — Thiès, Sénégal", en: "Junior Data Analyst — Thiès, Senegal" },
   about_btn_cv: { fr: "Télécharger mon CV complet", en: "Download my full resume" },
   about_btn_certs: { fr: "Voir mes certifications", en: "View my certifications" },
+
+  personality_eyebrow: { fr: "Profil de personnalité", en: "Personality Profile" },
+  personality_heading: { fr: "Architecte (INTJ)", en: "Architect (INTJ)" },
+  personality_lead: {
+    fr: "Au-delà des outils techniques, mon profil de personnalité éclaire ma façon d'aborder une mission data : avec méthode, autonomie et une vision d'ensemble. Je le restitue ici selon les quatre piliers du Projet Personnel et Professionnel (PPP).",
+    en: "Beyond technical tools, my personality profile shapes how I approach a data mission: with method, autonomy and a big-picture view. Here it is, mapped to the four pillars of the PPP (Personal & Professional Project) framework."
+  },
+  personality_interet_tag: { fr: "Intérêt", en: "Interest" },
+  personality_interet_sub: { fr: "Ce que j'aime faire", en: "What I love doing" },
+  personality_interet_text: {
+    fr: "Comprendre les mécanismes derrière un chiffre plutôt que le chiffre lui-même : les problèmes complexes, la modélisation de systèmes et l'apprentissage continu de nouveaux outils.",
+    en: "Understanding the mechanics behind a number rather than the number itself: complex problems, systems modeling, and continuously learning new tools."
+  },
+  personality_competences_tag: { fr: "Compétences", en: "Skills" },
+  personality_competences_sub: { fr: "Ce que je sais faire", en: "What I'm good at" },
+  personality_competences_text: {
+    fr: "Structurer une base de données, construire un dashboard qui répond à une vraie question business, et vulgariser un résultat statistique pour un public non technique.",
+    en: "Structuring a database, building a dashboard that answers a real business question, and translating a statistical result for a non-technical audience."
+  },
+  personality_etre_tag: { fr: "Être", en: "Character" },
+  personality_etre_sub: { fr: "Mes savoir-être et qualités personnelles", en: "My personal qualities" },
+  personality_etre_text: {
+    fr: "Rigoureux, autonome et exigeant envers moi-même. Je privilégie un raisonnement solide à une réponse rapide, avec la même exigence de qualité quel que soit le contexte de la mission.",
+    en: "Rigorous, independent and demanding of myself. I favor solid reasoning over a quick answer, holding the same standard of quality regardless of the context."
+  },
+  personality_moteurs_tag: { fr: "Moteurs", en: "Drivers" },
+  personality_moteurs_sub: { fr: "Ce qui me pousse à agir", en: "What drives me" },
+  personality_moteurs_text: {
+    fr: "La recherche de clarté : transformer une masse de données en une explication simple et actionnable. Et la progression continue — chaque certificat, chaque projet est une étape vers plus d'autonomie technique.",
+    en: "The pursuit of clarity: turning a mass of data into a simple, actionable explanation. And continuous progress — every certificate, every project is a step toward greater technical autonomy."
+  },
+  personality_credit: { fr: "Type identifié via 16Personalities, restitué selon la méthodologie PPP.", en: "Type identified via 16Personalities, mapped using the PPP framework." },
   about_p1: {
     fr: "Étudiant en Licence 3 économie appliquée à l'Université Amadou Makhtar MBOW (UAM) de Diamniadio, à Dakar, je me suis progressivement spécialisé dans l'analyse de données au fil de mes travaux de recherche, jusqu'à en faire aujourd'hui mon activité principale.",
     en: "A 3rd-year Applied Economics student at Université Amadou Makhtar MBOW (UAM) in Diamniadio, Dakar, I gradually specialized in data analysis through my research work, and it has since become my main focus."
